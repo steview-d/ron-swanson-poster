@@ -1,23 +1,40 @@
+// variables
+
+$image-height: 70vh;
+
 body {
     background-color: #000000;
+    font-family: "Times New Roman", serif;
 }
 
 .picture {
-    height: 50vh;
+    height: $image-height;
     padding: .4rem;
     border: 2px solid #FFFFFF;
 
     img {
         width: 100%;
-        height: calc(50vh - (.8rem + 4px));
+        height: calc(#{$image-height} - (.8rem + 4px));
         object-fit: cover;
         overflow: hidden;
     }
 }
 
 .title {
-    font-family: "Times New Roman", serif;
     margin: 0 auto;
     color: #FFFFFF;
     font-size: 4rem;
+    letter-spacing: 2rem;
+}
+
+.quote {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 100;
+
+    span {
+        color: #999999;
+        font-size: 1.1rem;
+        font-style: italic;
+    }
 }
