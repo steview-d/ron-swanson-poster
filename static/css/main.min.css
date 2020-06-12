@@ -1,2 +1,2 @@
-body{background-color:#000000}
+body{background-color:#000000}.picture{height:50vh;padding:.4rem;border:2px solid #FFFFFF}.picture img{width:100%;height:calc(50vh - (.8rem + 4px));-o-object-fit:cover;object-fit:cover;overflow:hidden}.title{font-family:"Times New Roman", serif;margin:0 auto;color:#FFFFFF;font-size:4rem}
 /*# sourceMappingURL=main.min.css.map */
