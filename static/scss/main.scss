@@ -1,6 +1,7 @@
 // variables
 
-$image-height: 70vh;
+// $image-height: 65vh;
+$image-height: calc(100vh - 250px);
 
 body {
     background-color: #000000;
@@ -8,34 +9,60 @@ body {
 }
 
 .picture {
-    height: $image-height;
+    height: calc(#{$image-height} - 100px);
     padding: .4rem;
     border: 2px solid #FFFFFF;
 
+    @media (min-width: 576px) {
+        height: $image-height;
+    }
+
     img {
         width: 100%;
-        height: calc(#{$image-height} - (.8rem + 4px));
+        height: calc(#{$image-height} - (.8rem + 4px) - 100px);
         object-fit: cover;
         overflow: hidden;
+
+        @media (min-width: 576px) {
+            height: calc(#{$image-height} - (.8rem + 4px));
+        }
+
     }
 }
 
 .title {
     margin: 0 auto;
     color: #FFFFFF;
-    font-size: 4rem;
-    letter-spacing: 2rem;
-    margin-right: -2rem;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    margin-right: -.2rem;
+
+    @media (min-width: 576px) {
+        font-size: 3rem;
+        letter-spacing: 1rem;
+        margin-right: -1rem;
+    }
+
+    @media (min-width: 768px) {
+        // font-size: 3rem;
+        letter-spacing: 1.5rem;
+        margin-right: -1.5rem;
+    }
+
+    @media (min-width: 1400px) {
+        font-size: 4rem;
+        letter-spacing: 2rem;
+        margin-right: -2rem;
+    }
+    
 }
 
 .quote {
     color: #FFFFFF;
-    font-size: 1.25rem;
-    font-weight: 100;
+    font-size: 1rem;
+    font-weight: 400;
 
-    span {
-        color: #999999;
-        font-size: 1.1rem;
-        font-style: italic;
+    @media (min-width: 576px) {
+        font-size: 1.25rem;
     }
 }
