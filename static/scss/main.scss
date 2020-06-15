@@ -1,7 +1,7 @@
 // variables
 
 // $image-height: 65vh;
-$image-height: calc(100vh - 250px);
+$image-height: calc(100vh - 260px);
 
 body {
     background-color: #000000;
@@ -39,12 +39,11 @@ body {
 
     @media (min-width: 576px) {
         font-size: 3rem;
-        letter-spacing: 1rem;
-        margin-right: -1rem;
+        letter-spacing: .9rem;
+        margin-right: -.9rem;
     }
 
     @media (min-width: 768px) {
-        // font-size: 3rem;
         letter-spacing: 1.5rem;
         margin-right: -1.5rem;
     }
@@ -61,6 +60,7 @@ body {
     color: #FFFFFF;
     font-size: 1rem;
     font-weight: 400;
+    margin-bottom: 0;
 
     @media (min-width: 576px) {
         font-size: 1.25rem;

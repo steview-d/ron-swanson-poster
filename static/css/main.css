@@ -4,20 +4,20 @@ body {
 }
 
 .picture {
-  height: calc(calc(100vh - 250px) - 100px);
+  height: calc(calc(100vh - 260px) - 100px);
   padding: .4rem;
   border: 2px solid #FFFFFF;
 }
 
 @media (min-width: 576px) {
   .picture {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 260px);
   }
 }
 
 .picture img {
   width: 100%;
-  height: calc(calc(100vh - 250px) - (.8rem + 4px) - 100px);
+  height: calc(calc(100vh - 260px) - (.8rem + 4px) - 100px);
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
@@ -25,7 +25,7 @@ body {
 
 @media (min-width: 576px) {
   .picture img {
-    height: calc(calc(100vh - 250px) - (.8rem + 4px));
+    height: calc(calc(100vh - 260px) - (.8rem + 4px));
   }
 }
 
@@ -40,8 +40,8 @@ body {
 @media (min-width: 576px) {
   .title {
     font-size: 3rem;
-    letter-spacing: 1rem;
-    margin-right: -1rem;
+    letter-spacing: .9rem;
+    margin-right: -.9rem;
   }
 }
 
@@ -64,6 +64,7 @@ body {
   color: #FFFFFF;
   font-size: 1rem;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 @media (min-width: 576px) {
