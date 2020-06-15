@@ -2,15 +2,15 @@ const urlAPI = 'http://ron-swanson-quotes.herokuapp.com/v2/quotes';
 
 class quote {
     constructor(url) {
-        this.quoteText = url;
+        this.quoteUrl = url;
     }
 
-    async getQuote() {
+    getQuote() {
         const quoteArea = document.getElementById('quote-text');
-        await fetch(this.quoteText)
+        fetch(this.quoteUrl)
             .then(response => response.json())
-            .then(quote => {
-                quoteArea.textContent = quote;
+            .then(quoteText => {
+                quoteArea.textContent = quoteText;
             })
             .catch(err => {
                 console.log(err);
