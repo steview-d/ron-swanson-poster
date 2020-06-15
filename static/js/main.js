@@ -1,4 +1,4 @@
-const urlAPI = 'http://wron-swanson-quotes.herokuapp.com/v2/quotes';
+const urlAPI = 'http://ron-swanson-quotes.herokuapp.com/v2/quotes';
 
 class quote {
     constructor(url) {
