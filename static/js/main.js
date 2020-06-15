@@ -23,6 +23,8 @@ class quote {
 newQuote = new quote(urlAPI);
 newQuote.getQuote();
 
-$("#refresh-icon").on("click", function(){
-    newQuote.getQuote()
+const refreshIcon = document.getElementById('refresh-icon');
+
+refreshIcon.addEventListener('click', function () {
+    newQuote.getQuote();
 });
