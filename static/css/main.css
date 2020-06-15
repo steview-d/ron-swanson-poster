@@ -1,12 +1,12 @@
 body {
   background-color: #000000;
-  font-family: "Times New Roman", serif;
+  font-family: 'Times New Roman', serif;
 }
 
 .picture {
   height: calc(calc(100vh - 260px) - 100px);
-  padding: .4rem;
-  border: 2px solid #FFFFFF;
+  padding: 0.4rem;
+  border: 2px solid #ffffff;
 }
 
 @media (min-width: 576px) {
@@ -17,7 +17,7 @@ body {
 
 .picture img {
   width: 100%;
-  height: calc(calc(100vh - 260px) - (.8rem + 4px) - 100px);
+  height: calc(calc(100vh - 260px) - (0.8rem + 4px) - 100px);
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
@@ -25,23 +25,23 @@ body {
 
 @media (min-width: 576px) {
   .picture img {
-    height: calc(calc(100vh - 260px) - (.8rem + 4px));
+    height: calc(calc(100vh - 260px) - (0.8rem + 4px));
   }
 }
 
 .title {
   margin: 0 auto;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 2rem;
-  letter-spacing: .2rem;
-  margin-right: -.2rem;
+  letter-spacing: 0.2rem;
+  margin-right: -0.2rem;
 }
 
 @media (min-width: 576px) {
   .title {
     font-size: 3rem;
-    letter-spacing: .9rem;
-    margin-right: -.9rem;
+    letter-spacing: 0.9rem;
+    margin-right: -0.9rem;
   }
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .quote {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 0;
@@ -71,5 +71,36 @@ body {
   .quote {
     font-size: 1.25rem;
   }
+}
+
+#refresh-icon {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (min-width: 576px) {
+  #refresh-icon {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+#refresh-icon:focus {
+  outline: none;
+}
+
+#refresh-icon:hover {
+  opacity: 0.9;
+}
+
+#refresh-icon img {
+  height: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
